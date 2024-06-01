@@ -547,3 +547,38 @@ section {
     margin-bottom: 60px;
   }
 }
+
+.learn-more-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  position: relative;
+}
+
+/* Underline effect using pseudo-element */
+.learn-more-link::after {
+  content: ""; /* Required for pseudo-element */
+  position: absolute; /* Position the underline */
+  left: 0; /* Start from the left */
+  bottom: -3px; /* Adjust the distance from text */
+  width: 100%; /* Full width of parent */
+  height: 2px; /* Height of the underline */
+  background-color: #d6ad60; /* Set underline color */
+}
+
+.learn-more-link:hover::after {
+  font-weight: bold;
+  color: #1a1a1a;
+  text-decoration: none;
+  transform-origin: left;
+  animation: animate 0.4s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
