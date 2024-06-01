@@ -318,7 +318,7 @@ section {
   font-size: 30px;
 }
 .navigation-bar a {
-  color: #fff;
+  color: #122620;
 }
 .menu {
   position: relative;
@@ -348,48 +348,19 @@ section {
 }
 
 .intro-box {
-  height: 100vh;
+  height: 20vh;
+  padding: 100px;
   display: table;
-  text-align: center;
+  text-align: left;
   width: 100%;
+}
+.intro h1 {
+  margin: 0.2px;
+  letter-spacing: 2px;
 }
 .intro {
   display: table-cell;
   vertical-align: middle;
-}
-.intro-content {
-  background: 
-   /* gradient for the shimmer */ linear-gradient(
-      65deg,
-      #0000 calc(50% - 50px),
-      #fff5 0,
-      #fffb calc(50% + 50px),
-      #0000 0
-    ),
-    /* gradient for the text */ linear-gradient(45deg, #122620, #f4ebd0);
-  /* the sise of the first gradient is bigger than 100% */
-  background-size: calc(200% + 100px) 100%, 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: flare 3s infinite linear;
-
-  font-family: sans-serif;
-  font-weight: 800;
-  font-size: 80px;
-  text-transform: uppercase;
-  margin: 0;
-  width: fit-content;
-}
-
-/* you animate from right to left */
-@keyframes flare {
-  0% {
-    background-position: right;
-  }
-  30%,
-  100% {
-    background-position: left;
-  }
 }
 
 .header h1 {
@@ -445,49 +416,6 @@ section {
   padding-right: 30px;
 }
 
-.vira-quote {
-  background-image: url(../images/3.jpg);
-  /*padding: 120px 0;*/
-  color: #fff;
-  font-style: italic;
-}
-.vira-quote p {
-  font-size: 32px;
-  color: #fff;
-}
-.vira-quote .quote {
-  margin-bottom: 40px;
-}
-.vira-quote .author {
-  font-size: 21px;
-  margin-bottom: 40px;
-}
-.watch {
-  background-image: url(../images/7.jpg);
-  font-style: italic;
-  font-size: 32px;
-  color: #fff;
-  padding: 150px 0;
-}
-.watch a {
-  border: 2px solid #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  line-height: 70px;
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  padding: 0;
-  font-size: 21px;
-  color: #fff;
-}
-.watch a:hover,
-.watch a:active,
-.watch a:focus {
-  background-color: #fff;
-  color: #424242;
-}
-
 .subscribe {
   background-image: url(../images/11.jpg);
 }
@@ -520,9 +448,7 @@ section {
   transition: all 0.3s ease-in-out;
   margin-bottom: 45px;
 }
-/*.contact .vira-card:hover{
-	box-shadow: 0px 4px 2px rgba(17, 17, 17, 0.3);
-}*/
+
 .contact .vira-card .vira-card-header {
   margin-bottom: 15px;
   font-size: 21px;
@@ -556,6 +482,39 @@ section {
 }
 
 /*animations*/
+.intro-content-title {
+  background: 
+   /* gradient for the shimmer */ linear-gradient(
+      65deg,
+      #0000 calc(50% - 50px),
+      #fff5 0,
+      #fffb calc(50% + 50px),
+      #0000 0
+    ),
+    /* gradient for the text */ linear-gradient(45deg, #122620, #f4ebd0);
+  /* the sise of the first gradient is bigger than 100% */
+  background-size: calc(200% + 100px) 100%, 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flare 3s infinite linear;
+
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: 0;
+  width: fit-content;
+}
+
+@keyframes flare {
+  0% {
+    background-position: right;
+  }
+  30%,
+  100% {
+    background-position: left;
+  }
+}
 .vira-card .vira-card-header .card-icon:after {
   transition: all 0.3s ease-in-out;
 }
@@ -589,15 +548,14 @@ section {
   position: relative;
 }
 
-/* Underline effect using pseudo-element */
 .learn-more-link::after {
-  content: ""; /* Required for pseudo-element */
-  position: absolute; /* Position the underline */
-  left: 0; /* Start from the left */
-  bottom: -3px; /* Adjust the distance from text */
-  width: 100%; /* Full width of parent */
-  height: 2px; /* Height of the underline */
-  background-color: #d6ad60; /* Set underline color */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #d6ad60;
 }
 
 .learn-more-link:hover::after {
