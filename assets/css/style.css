@@ -357,6 +357,41 @@ section {
   display: table-cell;
   vertical-align: middle;
 }
+.intro-content {
+  background: 
+   /* gradient for the shimmer */ linear-gradient(
+      65deg,
+      #0000 calc(50% - 50px),
+      #fff5 0,
+      #fffb calc(50% + 50px),
+      #0000 0
+    ),
+    /* gradient for the text */ linear-gradient(45deg, #122620, #f4ebd0);
+  /* the sise of the first gradient is bigger than 100% */
+  background-size: calc(200% + 100px) 100%, 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flare 3s infinite linear;
+
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: 0;
+  width: fit-content;
+}
+
+/* you animate from right to left */
+@keyframes flare {
+  0% {
+    background-position: right;
+  }
+  30%,
+  100% {
+    background-position: left;
+  }
+}
+
 .header h1 {
   margin: 0;
 }
@@ -549,8 +584,8 @@ section {
 }
 
 .learn-more-link {
-  text-decoration: none;
-  color: #1a1a1a;
+  text-decoration: none !important;
+  color: #1a1a1a !important;
   position: relative;
 }
 
@@ -566,9 +601,6 @@ section {
 }
 
 .learn-more-link:hover::after {
-  font-weight: bold;
-  color: #1a1a1a;
-  text-decoration: none;
   transform-origin: left;
   animation: animate 0.4s linear forwards;
 }
