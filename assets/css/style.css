@@ -75,112 +75,10 @@ section {
   border-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-.form-control option {
-  color: #424242;
-}
-.form-control {
-  border-radius: 0;
-  padding: 25px;
-  font-size: 18px;
-  font-style: italic;
-  background-color: transparent;
-  color: #424242;
-  margin-bottom: 30px;
-  border-color: #51c2b9;
-}
-.form-control:focus {
-  border-color: #51c2b9;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-    0 0 8px rgba(81, 194, 185, 0.6);
-}
-.form-control::-webkit-input-placeholder {
-  color: #fff;
-}
-.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: #fff;
-}
-.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #fff;
-}
-.form-control:-ms-input-placeholder {
-  color: #fff;
-}
-
-.element .form-control::-webkit-input-placeholder {
-  color: #424242;
-}
-.element .form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: #424242;
-}
-.element .form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #424242;
-}
-.element .form-control:-ms-input-placeholder {
-  color: #424242;
-}
 
 /*Helper class*/
-.mt80 {
-  margin-top: 80px;
-}
-.mb80 {
-  margin-bottom: 80px;
-}
-.mr60 {
-  margin-right: 60px;
-}
-.bg-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.bg-img div {
-  z-index: 1;
-  position: relative;
-}
-.bg-img:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  left: 0;
-  top: 0;
-}
 .section {
   padding: 100px 0;
-}
-
-/*Button*/
-.vira-btn {
-  border-color: #51c2b9;
-  font-style: italic;
-  color: #51c2b9;
-  border-radius: 0;
-  letter-spacing: 3px;
-  padding: 15px 80px;
-  margin-bottom: 30px;
-  background-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.vira-btn:hover {
-  background-color: #51c2b9;
-  color: #fff;
-}
-.solid {
-  background-color: #51c2b9;
-  color: #fff;
-}
-.solid:hover {
-  background-color: #fff;
-  color: #51c2b9;
-}
-.small-btn {
-  padding: 10px 130px;
 }
 
 /*Element page*/
@@ -202,29 +100,6 @@ section {
 }
 .headings p {
   margin-bottom: 80px;
-}
-.social-icons ul {
-  text-align: center;
-  padding-left: 0;
-  display: inline-block;
-}
-.social-icons ul a li {
-  display: inline-block;
-  list-style-type: none;
-  border: 2px solid #51c2b9;
-  margin-right: 10px;
-  background-color: #51c2b9;
-  color: #fff;
-  font-size: 18px;
-  line-height: 32px;
-  width: 36px;
-}
-.social-icons ul a li:last-child {
-  margin-right: 0;
-}
-.social-icons ul a:hover li {
-  color: #51c2b9;
-  background-color: #fff;
 }
 
 /*Navigation*/
