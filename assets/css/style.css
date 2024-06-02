@@ -412,22 +412,6 @@ section {
 .about span {
   font-weight: 600;
 }
-
-.contact .vira-card .vira-card-header {
-  margin-bottom: 15px;
-  font-size: 21px;
-  color: #51c2b9;
-}
-.contact .vira-card .vira-card-content h3 {
-  letter-spacing: 2px;
-  margin-bottom: 45px;
-}
-.contact .vira-card .vira-card-content h3:after {
-  top: 40px;
-}
-.contact .vira-card .vira-card-content p {
-  font-size: 18px;
-}
 .footer {
   background-color: #202020;
   text-align: center;
@@ -446,6 +430,51 @@ section {
 }
 
 /*animations*/
+.dune-media-title span {
+  display: inline-block;
+  animation: bottomToTop 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.dune-media-title .span1 {
+  animation-delay: 0.02s;
+}
+.dune-media-title .span2 {
+  animation-delay: 0.04s;
+}
+.dune-media-title .span3 {
+  animation-delay: 0.06s;
+}
+.dune-media-title .span4 {
+  animation-delay: 0.08s;
+}
+.dune-media-title .span5 {
+  animation-delay: 0.1s;
+}
+.dune-media-title .span6 {
+  animation-delay: 0.12s;
+}
+.dune-media-title .span7 {
+  animation-delay: 0.14s;
+}
+.dune-media-title .span8 {
+  animation-delay: 0.16s;
+}
+.dune-media-title .span9 {
+  animation-delay: 0.18s;
+}
+.dune-media-title .span10 {
+  animation-delay: 0.2s;
+}
 .learn-more-link {
   text-decoration: none !important;
   color: #1a1a1a !important;
