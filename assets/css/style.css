@@ -302,22 +302,45 @@ section {
 }
 
 /* Work | Portfolio Section*/
-#portfolio.container {
+.porfolio-container {
   padding: 0 20px;
-  position: relative;
-  display: flex;
-  overflow-x: auto;
 }
-
-#portfolio.container .box {
-  flex: 0 0 auto;
-  margin-right: 10px;
+div.gallery {
+  aspect-ratio: 0.5;
+  display: block;
+  overflow: hidden;
 }
-
-#portfolio.container .box img {
+div.gallery:hover img {
+  transform: scale(1.25);
+  transition: transform 0.5s ease;
+}
+div.gallery img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Buttons */
