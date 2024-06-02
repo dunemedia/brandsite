@@ -178,7 +178,7 @@ section {
   color: #f4ebd0;
 }
 
-/*Home page*/
+/*Landing Text Section*/
 .intro-box {
   height: 20vh;
   padding: 100px;
@@ -290,6 +290,7 @@ section {
 .footer a {
   color: #fff;
 }
+
 /* Line Section */
 .line {
   position: relative;
@@ -298,6 +299,25 @@ section {
   width: 100%;
   height: 1px;
   background-color: black;
+}
+
+/* Work | Portfolio Section*/
+#portfolio.container {
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+}
+
+#portfolio.container .box {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+#portfolio.container .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Buttons */
