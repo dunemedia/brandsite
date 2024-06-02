@@ -2,7 +2,8 @@
 @import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 /*Global Settings*/
 body {
-  font-family: "Lora", serif;
+  font-family: August, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
 }
 h1,
 h2,
@@ -340,13 +341,6 @@ section {
 }
 
 /*Home page*/
-.header {
-  background-image: url(../images/1.jpg);
-  height: 100vh;
-  position: relative;
-  min-height: 659px;
-}
-
 .intro-box {
   height: 20vh;
   padding: 100px;
@@ -355,12 +349,80 @@ section {
   width: 100%;
 }
 .intro h1 {
+  font-weight: 700;
   margin: 0.2px;
   letter-spacing: 2px;
 }
 .intro {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* content on main */
+.content {
+  padding: 0 20px;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.content-bottom-left {
+  font-family: "cursive";
+  font-style: oblique;
+  font-size: 5vw;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  color: white;
+  padding: 10px 10px;
+}
+.content-text-box {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 20%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+}
+.content-text-box h2 {
+  color: white !important;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .content-text-box {
+    width: 30%; /* Adjust width for smaller screens */
+    right: 2%; /* Adjust position for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content-text-box {
+    width: 40%; /* Adjust width for even smaller screens */
+    right: 2%; /* Adjust position for even smaller screens */
+    bottom: 2%; /* Adjust position for even smaller screens */
+  }
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #fff; /* Change the color to match your design */
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 80%;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
 }
 
 .header h1 {
@@ -386,7 +448,7 @@ section {
 }
 
 .about {
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 .about img {
   margin: 30px auto;
