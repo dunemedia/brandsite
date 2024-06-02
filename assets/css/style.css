@@ -17,6 +17,7 @@
 body {
   font-family: August, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
+  background-color: #0e1111;
 }
 h1,
 h2,
@@ -24,10 +25,9 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
   font-weight: 900;
   color: #424242;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   margin-top: 0;
 }
 h1 {
@@ -129,7 +129,6 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .menu-item ul a:hover li {
-  color: #51c2b9;
   text-decoration: none;
 }
 .hide-menu {
@@ -169,7 +168,11 @@ section {
   content: "CLOSE";
 }
 
-/* Dune Media Title */
+/* Intro Section */
+.intro-section {
+  width: 100vw;
+  /* height: 100vh; */
+}
 .dune-media-title h1 {
   font-family: "Bonnaco-Condensed";
   display: flex;
@@ -178,29 +181,12 @@ section {
   color: #f4ebd0;
 }
 
-/*Landing Text Section*/
-.intro-box {
-  height: 20vh;
-  padding: 100px;
-  display: table;
-  text-align: center;
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
-}
-.intro h1 {
-  font-weight: 700;
-  margin: 0.2px;
-  letter-spacing: 2px;
-}
-
-/* content on main */
-.content {
-  padding: 0 20px;
+/* Content Section */
+.content-section {
   position: relative;
+  padding: 0 20px;
   letter-spacing: 0.5px;
 }
-
 .content-bottom-left {
   font-family: "cursive";
   font-style: oblique;
@@ -241,6 +227,7 @@ section {
     bottom: 2%; /* Adjust position for even smaller screens */
   }
 }
+/* About Section */
 
 .header h1 {
   margin: 0;
@@ -265,7 +252,7 @@ section {
 }
 
 .about {
-  background-color: #fff;
+  background-color: #0e1111;
 }
 .about img {
   margin: 30px auto;
@@ -292,23 +279,35 @@ section {
 }
 
 /* Line Section */
-.line {
-  position: relative;
-  padding: 0 80px;
-  margin: 0 auto;
+#line-animation {
   width: 100%;
-  height: 1px;
-  background-color: black;
+  height: 2px;
+  position: relative;
+}
+.line {
+  width: 0;
+  height: 100%;
+  background-color: #f8f8ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: lineDrawToRight 1s forwards;
 }
 
 /* Work | Portfolio Section*/
 .porfolio-container {
-  padding: 0 20px;
+  padding: 20px 20px;
+  background-color: #0e1111;
 }
 div.gallery {
   aspect-ratio: 0.5;
   display: block;
   overflow: hidden;
+}
+div.desc {
+  text-align: justify;
+  width: 100%;
+  margin-top: 10px;
 }
 div.gallery:hover img {
   transform: scale(1.25);
@@ -438,5 +437,14 @@ div.gallery img {
   100% {
     transform: scaleX(1);
     transform-origin: left;
+  }
+}
+
+@keyframes lineDrawToRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
