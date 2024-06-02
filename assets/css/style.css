@@ -6,6 +6,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Bannaco-Regular";
+  src: url("../fonts/bonnaco.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Global Settings*/
 body {
   font-family: August, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -20,7 +27,6 @@ h6 {
   text-transform: uppercase;
   font-weight: 900;
   color: #424242;
-
   margin-bottom: 35px;
   margin-top: 0;
 }
@@ -219,6 +225,7 @@ section {
 .content-text-box h2 {
   color: white !important;
 }
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .content-text-box {
@@ -233,26 +240,6 @@ section {
     right: 2%; /* Adjust position for even smaller screens */
     bottom: 2%; /* Adjust position for even smaller screens */
   }
-}
-
-.contact-button {
-  display: inline-block;
-  background-color: #fff; /* Change the color to match your design */
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 80%;
-  width: 100%;
-  font-weight: bold;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  text-decoration: none;
-  background-color: black;
-  color: white;
 }
 
 .header h1 {
@@ -302,6 +289,36 @@ section {
 }
 .footer a {
   color: #fff;
+}
+/* Line Section */
+.line {
+  position: relative;
+  padding: 0 80px;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+/* Buttons */
+.contact-button {
+  display: inline-block;
+  background-color: #fff; /* Change the color to match your design */
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 80%;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
 }
 
 /*animations*/
