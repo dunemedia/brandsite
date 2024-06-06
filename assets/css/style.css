@@ -45,6 +45,12 @@
   font-style: normal;
 }
 
+:root {
+  --primary-color: #62aa94;
+  --secondary-color: #f8f8ff;
+  --accent-color: #d6ad60;
+}
+
 /*Global Settings*/
 body {
   /* font-family: August, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -136,14 +142,19 @@ section {
 /* Intro Section */
 .intro-section {
   width: 100vw;
-  /* height: 100vh; */
 }
+/* Default styling for small screens */
 .dune-media-title h1 {
   font-family: "Bonnaco-Condensed";
   display: flex;
   justify-content: center;
   font-size: 30vw;
   color: #f4ebd0;
+}
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .dune-media-title h1 {
+  }
 }
 
 /* Content Section */
