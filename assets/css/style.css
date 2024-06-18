@@ -304,13 +304,34 @@ header {
   gap: 20px;
   flex-direction: column;
 }
+.service-container h3 {
+}
+.service-item {
+  background-color: #f8f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+.service-item.video-container {
+  width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.video-container video {
+  width: 100%;
+  display: block;
+  height: auto;
+}
 .service-item:nth-child(odd) {
+  text-align: left;
   align-self: flex-start; /* Align odd-numbered sections to the left */
 }
 .service-item:nth-child(even) {
+  text-align: right;
   align-self: flex-end; /* Align even-numbered sections to the right */
 }
-
 /* Portfolio Section*/
 .porfolio-container {
   padding: 20px 20px;
