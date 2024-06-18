@@ -185,30 +185,61 @@
 
 
     <section id="services" class="services-section">
+      <div class="container-fluid">
       <h2>How we make your business unforgettable: Explore our solutions that drive revenue growth and customer loyalty </h2>
-      <div class="service-container">
-        <div class="service-item">
-           <h3>Organic Content Creation</h3>
-          <div class="video-container">
-            <video src="assets/video/content-creation.mp4" alt="na"></video>
-          </div>
-          <p>We specialize in crafting compelling content strategies and delivering high-impact content that resonates with your target audience.</p>
-        </div>
 
+      <div class="service-container">
+        <div class="service-group">
+          <div class="service-item">
+            <h3>Organic Content Creation</h3>
+            <div class="video-container">
+              <video autoplay muted loop>
+              <source src="assets/video/content-creation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+            <p>We specialize in crafting compelling content strategies and delivering high-impact content that resonates with your target audience.</p>
+          </div>
+          <div class="service-description">
+            <h3>AI Consultations</h3>
+            <p>Our AI consultations help you leverage the power of artificial intelligence to drive business growth and customer engagement.</p>
+          </div>
+      </div>
+
+      <div class="service-group">
+        <div class="service-description">
+          <h3>Brand Strategy</h3>
+          <p>Our brand strategy services help you define your brand's purpose, positioning, and personality to drive customer loyalty and revenue growth.</p>
+        </div>
         <div class="service-item">
           <h3>Web Design & SEO Optimization</h3>
           <div class="video-container">
-            <video src="assets/video/website-creation.mp4" alt="na" type="video/mp4"></video>
+            <video autoplay muted loop>
+            <source src="assets/video/website-creation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           </div>
           <p>We create custom websites that reflect your brand to elevate your online presence & drive real results.</p>
         </div>
+      </div>
+
+      <div class="service-group">
         <div class="service-item">
         <h3>Product Ads</h3>
-        <div class="video-container">
-          <video src="assets/video/product-ads.mp4" alt="na"></video>
+          <div class="video-container">
+            <video autoplay muted loop>
+              <source src="assets/video/product-ads.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p>We create emotion. We create stories to show how your product will change people's lives.</p>
         </div>
-        <p>We create emotion. We create stories to show how your business will change people's lives.</p>
+        <div class="service-description">
+          <h3>Social Media Management</h3>
+          <p>Our social media management services help you build a strong online presence, engage with your audience, and drive customer loyalty.</p>
         </div>
+      </div>
+    </div>
     </section>
 
     <p>&nbsp;03</p>
@@ -219,6 +250,11 @@
     <section id="clients" class="clients-section">
       <h2>What Our Clients Have Said</h2>
   </section>
+
+      <p>&nbsp;04</p>
+    <section id="line-animation">
+      <div class="line"></div>
+    </section>
 
     <section id="porfolio" class="porfolio-container">
       <div class="p-title">
@@ -275,20 +311,39 @@
     </section>
 
   <footer>
-    <h2>Let's Talk</h2>
-    <h3>hello@dunemedia.co</h3>
+    <div class="form-container">
+      <h2>Let's Talk</h2>
+      <form action="submit.php" method="post">
+          <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+    </div>
     <div class="footer-links">
+      <a href="#">hello@dunemedia.co</a>
       <a href="#about">About Us</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact Us</a>
     </div>
-    <div class="social-icons">
+    <!-- <div class="social-icons">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
-    <p>&copy; 2024 Dune Media. All rights reserved.</p>
+    <p>&copy; 2024 Dune Media. All rights reserved.</p> -->
   </footer>
 
 
