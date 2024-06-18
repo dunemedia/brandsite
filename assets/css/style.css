@@ -100,16 +100,16 @@ a {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    font-size: 4rem; /* Adjust font size for smaller screens */
   }
   h2 {
-    font-size: 1.75rem; /* Adjust font size for smaller screens */
+    font-size: 3rem; /* Adjust font size for smaller screens */
   }
   h3 {
-    font-size: 1.125rem; /* Adjust font size for smaller screens */
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
   }
   p {
-    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
 }
 
@@ -263,6 +263,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 10%;
 }
 
 /* Case Study Buttons */
@@ -293,7 +294,6 @@ header {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .case-study-text {
@@ -368,6 +368,14 @@ div.desc {
   margin-top: 10px;
   font-size: 14px;
   color: #818181;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 /* Buttons */

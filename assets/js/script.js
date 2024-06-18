@@ -83,30 +83,4 @@ $(document).ready(function () {
     $(".menu span").toggleClass("ion-navicon ion-android-close");
     $("#menu-item").toggleClass("show-menu hide-menu");
   });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".case-study-button");
-    const texts = document.querySelectorAll(".case-study-text");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const target = button.getAttribute("data-target");
-
-        // Hide all texts
-        texts.forEach((text) => {
-          text.classList.remove("active");
-        });
-
-        // Show the selected text
-        const selectedText = document.getElementById(target);
-        selectedText.classList.add("active");
-
-        // Activate the selected button
-        buttons.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        button.classList.add("active");
-      });
-    });
-  });
 });
