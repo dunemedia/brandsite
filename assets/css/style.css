@@ -304,15 +304,17 @@ header {
   gap: 20px;
   flex-direction: column;
 }
-.service-container h3 {
-}
 .service-item {
   background-color: #f8f8ff;
   padding: 20px;
   border-radius: 10px;
-  display: flex;
+  display: inline-flex;
   width: 50%;
   height: auto;
+  gap: 10px;
+}
+.service-item h3 {
+  color: var(--black-color);
 }
 .service-item.video-container {
   width: 25%;
