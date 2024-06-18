@@ -83,4 +83,21 @@ $(document).ready(function () {
     $(".menu span").toggleClass("ion-navicon ion-android-close");
     $("#menu-item").toggleClass("show-menu hide-menu");
   });
+
+  // Case Study Button
+  $(document).ready(function () {
+    $(".case-study-button").click(function () {
+      // Remove 'active' class from all buttons
+      $(".case-study-button").removeClass("active");
+      // Add 'active' class to the clicked button
+      $(this).addClass("active");
+
+      // Get the 'data-target' attribute of the clicked button
+      var target = $(this).attr("data-target");
+      // Hide all case study content
+      $(".case-study-text").removeClass("active");
+      // Show the targeted case study content
+      $("#" + target).addClass("active");
+    });
+  });
 });
