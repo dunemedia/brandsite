@@ -284,12 +284,31 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 .case-study-text {
   display: none;
 }
 .case-study-text.active {
   display: inline-grid;
+}
+
+/* Services Section */
+.services-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.service-container {
+  padding: 100px 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+}
+.service-item:nth-child(odd) {
+  align-self: flex-start; /* Align odd-numbered sections to the left */
+}
+.service-item:nth-child(even) {
+  align-self: flex-end; /* Align even-numbered sections to the right */
 }
 
 /* Portfolio Section*/
