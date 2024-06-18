@@ -243,55 +243,44 @@ header {
 
 /* Case Studies Section */
 .case-studies {
-  padding: 50px 0;
-  text-align: center; /* Center aligns the title */
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
 }
-
-.case-studies .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Case Study Title */
 .case-studies h2 {
-  margin-bottom: 20px;
+  text-align: left;
 }
 
-/* Case Study Wrapper */
+/* Case Study Buttons Wrapper */
 .case-study-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 10%;
+  gap: 5%;
 }
-
-/* Case Study Buttons */
 .case-study-buttons {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
 }
-
 .case-study-button {
-  background-color: var(--primary-color);
-  color: #fff;
+  font-size: large;
+  color: var(--black-color);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .case-study-button.active {
   background-color: var(--accent-color);
 }
 
 /* Case Study Content */
 .case-study-content {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -299,14 +288,13 @@ header {
 .case-study-text {
   display: none;
 }
-
 .case-study-text.active {
   display: block;
 }
-
+/*
 .case-study-text h3 {
   margin-bottom: 10px;
-}
+} */
 
 /* Portfolio Section*/
 .porfolio-container {
