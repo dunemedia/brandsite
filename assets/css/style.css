@@ -302,7 +302,7 @@ header {
 .services-section h2 {
   padding-bottom: 15px;
 }
-.service-container {
+.service-container.container-fluid {
   padding: 0px 20px;
   text-align: left;
   display: flex;
@@ -312,12 +312,10 @@ header {
   gap: 20px;
 }
 .service-group {
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: row;
-  flex: 1 1 50%;
+  flex-wrap: wrap;
   gap: 20px;
-  box-sizing: border-box;
-  max-width: calc(50% - 20px);
 }
 .service-item,
 .service-description {
@@ -328,6 +326,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   display: inline-flex;
+  flex-wrap: wrap;
   width: 50%;
   height: auto;
   gap: 10px;
