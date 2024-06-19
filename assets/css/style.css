@@ -203,6 +203,7 @@ header {
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
+  text-align: right;
 }
 .dune-media-title {
   display: flex;
@@ -216,6 +217,51 @@ header {
   color: var(--title-color);
   font-weight: bold;
   font-size: 20vw;
+}
+.cta-button {
+  padding: 12px 24px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--accent-color);
+  border: 4px solid --secondary-color;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;
+}
+.cta-button:hover {
+  background-color: var(--black-color);
+  color: #fff;
+  border-color: var(--secondary-color);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .cta-button {
+    font-size: 1.5rem;
+    display: block;
+  }
+  .dune-media-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  .dune-media-title h1 {
+    font-size: 40vw;
+    text-align: left;
+  }
+
+  .span6,
+  .span7,
+  .span8,
+  .span9,
+  .span10 {
+    display: inline-block !important;
+  }
 }
 
 /* About Section */
