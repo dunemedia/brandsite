@@ -378,21 +378,21 @@ header {
 }
 
 .service-description {
-  padding: 20px;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+  background-color: rgba(248, 248, 255, 0.95);
   border-radius: 10px;
   transition: opacity 0.5s ease;
   box-sizing: border-box;
 }
-.service-description h3 {
+.service-description p {
   color: var(--black-color);
 }
-
 .service-item h3 {
   color: var(--black-color);
 }
