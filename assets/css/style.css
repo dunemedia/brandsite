@@ -369,9 +369,6 @@ header {
 }
 .service-description p, .service-description a {
   color: var(--black-color) !important;
-  margin: 0;
-  display: table-cell;
-  vertical-align: middle;
 }
 .service-item h3 {
   color: var(--black-color);
