@@ -87,16 +87,17 @@ h2 {
   color: var(--secondary-color);
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: italic;
   color: #818181;
 }
 a {
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
+  font-size: 2rem;
 }
 
 /* Responsive adjustments */
@@ -112,6 +113,9 @@ a {
   }
   p {
     font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  a {
+    font-size: 1.5rem;
   }
 }
 
@@ -350,6 +354,7 @@ header {
 }
 
 .service-description {
+  display: block;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -362,8 +367,11 @@ header {
   transition: opacity 0.5s ease;
   box-sizing: border-box;
 }
-.service-description p {
-  color: var(--black-color);
+.service-description p, .service-description a {
+  color: var(--black-color) !important;
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
 }
 .service-item h3 {
   color: var(--black-color);
