@@ -34,9 +34,7 @@
 
       gtag("config", "G-WRMJSJKMNS");
     </script>
-
-    <!-- Calendly link widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   </head>
@@ -47,8 +45,13 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact" class="contact-button">Let's Talk</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li>
+          <button class="contact-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bella-matasic/interest-consolation'});return false;">
+            Let's Talk
+          </button>
+        </li>
+        
       </ul>
     </nav>
 
@@ -68,35 +71,11 @@
             <span class="span10">A</span>
           </h1>
         </div>
-        <button class="cta-button">Let's Talk</button>
+        <button class="cta-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bella-matasic/interest-consolation'});return false;">
+          Let's Talk
+        </button>
     </header>
-<!-- 
-    <section id="content" class="content-section">
-      <div class="img-responsive">
-        <img
-          src="assets/images/content.jpg"
-          style="border-radius: 30px; width: 100%"
-          alt="Content Marketing Strategies"
-        />
-      </div>
-      <div class="content-text-box">
-        <h2>Find growth for your brand.</h2>
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          async
-        ></script>
-        <a
-          href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bella-matasic/interest-consolation'});return false;"
-          class="contact-button"
-          >Let&#39;s Talk</a
-        >
-    </section> -->
+
     <p>&nbsp;01</p>
     <section id="line-animation">
       <div class="line"></div>
@@ -130,7 +109,7 @@
       <h2>How we make your business unforgettable: Explore our solutions that drive revenue growth and customer loyalty </h2>
 
       <div class="service-container">
-        <div class="service-group">
+        <div class="service-group responsive">
           <div class="service-item">
             <h3>Brand Strategy</h3>
             <div class="video-container">
@@ -145,7 +124,7 @@
           </div>
       </div>
 
-      <div class="service-group">
+      <div class="service-group responsive">
         <div class="service-item">
           <h3>Web Design & SEO</h3>
           <div class="video-container">
@@ -160,7 +139,7 @@
         </div>
       </div>
 
-      <div class="service-group">
+      <div class="service-group responsive">
         <div class="service-item">
         <h3>Paid Ads</h3>
           <div class="video-container">
@@ -254,9 +233,9 @@
       <div class="line"></div>
     </section>
 
-    <section id="porfolio" class="porfolio-container">
+    <section id="projects" class="porfolio-container">
       <div class="p-title">
-        <h2>Our Work</h2>
+        <h2>Case Studies</h2>
       </div>
       <div class="responsive">
         <div class="gallery">
@@ -264,8 +243,8 @@
             <img src="assets/images/vertical-knoxville.jpg" />
           </a>
           <div class="desc">
-            <h2 class="libre-baskerville-bold">Cooper Denton, Realtor</h2>
-            <p class="libre-baskerville-italic">Web Design & Development</p>
+            <h2>Cooper Denton, Realtor</h2>
+            <p>Web Design & Development</p>
           </div>
         </div>
       </div>
@@ -276,8 +255,8 @@
             <img src="assets/images/unknown-lifting.png" />
           </a>
           <div class="desc">
-            <h2 class="libre-baskerville-bold">Unknown Lifting</h2>
-            <p class="libre-baskerville-italic">Social Media Rebrand</p>
+            <h2>Unknown Lifting</h2>
+            <p>Social Media Rebrand</p>
           </div>
         </div>
       </div>
@@ -288,8 +267,8 @@
             <img src="assets/images/fastambition.png" />
           </a>
           <div class="desc">
-            <h2 class="libre-baskerville-bold">Fast Ambition</h2>
-            <p class="libre-baskerville-italic">Web Design & Development</p>
+            <h2>Fast Ambition</h2>
+            <p>Web Design & Development</p>
           </div>
         </div>
       </div>
@@ -300,8 +279,8 @@
             <img src="assets/images/freelanceu.png" />
           </a>
           <div class="desc">
-            <h2 class="libre-baskerville-bold">Freelance University</h2>
-            <p class="libre-baskerville-italic">UI/UX Design</p>
+            <h2>Freelance University</h2>
+            <p>UI/UX Design</p>
           </div>
         </div>
       </div>
@@ -314,7 +293,7 @@
 
   <footer>
     <div class="form-container">
-      <h2>Let's Talk</h2>
+      <h2>Request a Quote</h2>
       <form action="submit.php" method="post">
           <div class="form-group">
               <label for="name">Your Name:</label>
@@ -334,18 +313,20 @@
       </form>
     </div>
     <div class="footer-links">
-      <a href="#">hello@dunemedia.co</a>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact Us</a>
-    </div>
-    <!-- <div class="social-icons">
+      <div class="social-icons">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
-    <p>&copy; 2024 Dune Media. All rights reserved.</p> -->
+      <a href="#">hello@dunemedia.co</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Case Studies</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div class="footer-copyright">
+    <p>&copy; 2024 Dune Media. All rights reserved.</p>
+    </div>
   </footer>
 
 
