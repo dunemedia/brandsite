@@ -637,7 +637,7 @@ footer {
   height: 120px;
   resize: vertical;
 }
-.form-group button {
+.button {
   background-color: var(--accent-color);
   color: white;
   border: none;
@@ -646,7 +646,7 @@ footer {
   border-radius: 4px;
   font-size: 16px;
 }
-.form-group button:hover {
+.button:hover {
   background-color: var(--black-color);
 }
 
