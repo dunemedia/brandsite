@@ -378,18 +378,6 @@ header {
   opacity: 1;
 }
 
-.service-item.video-container {
-  width: 25%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.video-container video {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
 .service-group:hover {
   opacity: 1;
 }
