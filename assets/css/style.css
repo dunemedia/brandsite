@@ -325,7 +325,6 @@ header {
 }
 
 .service-container {
-  text-align: left;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -338,8 +337,26 @@ header {
   width: calc(50% - 20px);
   box-sizing: border-box;
 }
+.service-item {
+  text-align: center;
+  padding: 20px;
+  /* display: inline-flex; */
+  /* flex-wrap: wrap; */
+}
+#panel, .flip {
+  /* border-radius: 10px; */
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f8ff;
+  color: var(--black-color);
+  margin: auto;
+}
 
-.service-item,
+#panel {
+  display: none;
+}
+
+/* .service-item,
 .service-description {
   width: 100%;
   height: 100%;
@@ -351,9 +368,9 @@ header {
   flex-wrap: wrap;
   transition: 0.5s ease;
   backface-visibility: hidden;
-}
+} */
 
-.service-description {
+/* .service-description {
   display: block;
   opacity: 0;
   position: absolute;
@@ -366,8 +383,8 @@ header {
   border-radius: 10px;
   transition: opacity 0.5s ease;
   box-sizing: border-box;
-}
-.service-description p, .service-description a {
+} */
+/* .service-description p, .service-description a {
   color: var(--black-color) !important;
 }
 .service-item h3 {
@@ -380,7 +397,7 @@ header {
 
 .service-group:hover {
   opacity: 1;
-}
+} */
 
 /* Case Studies Section */
 .case-studies {

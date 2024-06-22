@@ -100,4 +100,24 @@ $(document).ready(function () {
       $("#" + target).addClass("active");
     });
   });
+
+  $(document).ready(function() {
+    // Panel Button click handler
+    $(".service-item.flip").on("click", function() {
+      $("#panel").toggle(); // Toggle the display of the #panel element
+    });
+  
+    // Close panel when clicking outside of it
+    $(document).on("click", function(event) {
+      if (!$(event.target).closest("#panel").length && !$(event.target).hasClass("service-item")) {
+        $("#panel").hide(); // Hide the #panel if clicked outside of it and not on .service-item
+      }
+    });
+  
+    // Prevent closing panel when clicking on .service-item
+    $(".service-item").on("click", function(event) {
+      event.stopPropagation(); // Prevent the click event from propagating to the document
+    });
+  });
+  
 });
