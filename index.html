@@ -10,7 +10,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Your existing CSS and JavaScript includes -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -36,23 +35,21 @@
     </script>
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
   </head>
   <body>
-    <div class="loader"></div> <!-- Loader here -->
     <nav>
       <div class="logo">DUNE MEDIA</div>
-      <div class="hamburger">&#9776;</div>
+      <!-- Hamburger Menu -->
+      <a class="McButton" data="hamburger-menu">
+        <b></b>
+        <b></b>
+        <b></b>
+      </a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li>
-          <button class="contact-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bella-matasic/interest-consolation'});return false;">
-            Let's Talk
-          </button>
-        </li>
-        
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -271,7 +268,7 @@
                   <div class="indicates-required form-group"><span class="asterisk">*</span> indicates required</div>
                   <div class="mc-field-group form-group">
                     <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email form-group" id="mce-EMAIL" required="" value=""></div>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
                   <div class="mc-field-group form-group">
                     <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
                     <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value=""></div>
@@ -303,9 +300,9 @@
 
     <div class="footer-links">
       <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61561322459191"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/dunemedia.co/"><i class="fa fa-instagram"></i></a>
-    </div>
+        <a href="https://www.facebook.com/profile.php?id=61561322459191"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dunemedia.co/"><i class="fa fa-instagram"></i></a>
+      </div>
       <a href="mailto:hello@dunemedia.co?subject=Requesting%20a%20Quote&body=Hello%20Dune%20Media,">hello@dunemedia.co</a>
       <a href="#about">About Us</a>
       <a href="#services">Services</a>
