@@ -236,7 +236,7 @@ nav ul li a:hover {
 /* Header */
 header {
   width: 100%;
-  height: 100vh;
+  height: 97vh;
   padding: 20px 0;
   position: relative;
   overflow: hidden;
@@ -261,7 +261,6 @@ header {
   margin: auto;
   font-family: "Bonnaco-Condensed", sans-serif;
   color: var(--accent-color);
-  /* font-weight: bold; */
   font-size: 20vw;
 }
 .cta-button {
@@ -286,6 +285,9 @@ header {
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
+  .header {
+    height: 95vh;
+  }
   .cta-button {
     font-size: 1.5rem;
     display: block;
