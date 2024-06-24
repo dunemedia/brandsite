@@ -405,6 +405,7 @@ header {
 .case-study-button {
   font-size: large;
   color: var(--black-color);
+  background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
