@@ -550,7 +550,7 @@ div.desc {
 /* footer */
 footer {
   color: var(--secondary-color);
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -596,8 +596,8 @@ footer {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .form-container {
-    width: 100%; /* Occupies full width on smaller screens */
-    max-width: 100%; /* Ensures full width on smaller screens */
+    width: 100%; 
+    max-width: 100%;
   }
   .footer-links {
     padding: 0;
@@ -685,7 +685,7 @@ footer {
 }
 .learn-more-link {
   text-decoration: none !important;
-  color: var(--secondary-color) !important;
+  color: var(--accent-color);
   position: relative;
 }
 
