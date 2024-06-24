@@ -385,6 +385,15 @@ header {
 .case-study-text.active {
   display: inline-grid;
 }
+@media (max-width: 768px) {
+  .case-study-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .case-study-buttons {
+    gap: 20px;
+  }
+}
 
 /* Clients */
 .clients-section {
