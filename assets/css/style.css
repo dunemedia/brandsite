@@ -192,60 +192,50 @@ nav ul li a:hover {
 header {
   width: 100%;
   height: 97vh;
-  padding: 20px 0;
   position: relative;
   overflow: hidden;
-}
-.text-box {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  text-align: right;
-}
-.dune-media-title {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.text-box {
+  width: 75%;
+  text-align: center;
+  overflow: hidden;
+}
+.dune-media-title {
   height: 100%;
-  /* Text Shadow Property */
   text-shadow: -1px -1px 0 #00688B, 1px -1px 0 #00688B, 1px 1px 0 #00688B,
-    1px 1px 0 #00688B;
+    1px 1px 0 #4e6167;
 }
 .dune-media-title h1 {
   margin: auto;
-  font-family: "Bonnaco-Condensed", sans-serif;
   color: var(--accent-color);
-  font-size: 20vw;
+  font-size: 15vw;
 }
 .cta-button {
-  padding: 12px 24px;
+  padding: 6px 24px;
   font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
   text-decoration: none;
-  color: --white-color;
-  background-color: var(--accent-color);
-  border: 4px solid --secondary-color;
+  background-color: var(--black-color);
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   display: inline-block;
 }
 .cta-button:hover {
-  background-color: var(--black-color);
+  background-color: var(--accent-color);
   color: --white-color;
   border-color: var(--secondary-color);
 }
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
-  .text-box p {
-    text-align: left;
-    color: #d6ad60;
-  }
   .header {
     height: 95vh;
+  }
+  .text-box {
+    text-align: left;
   }
   .cta-button {
     font-size: 1.5rem;
@@ -255,7 +245,6 @@ header {
     text-align: center;
   }
   .dune-media-title h1 {
-    font-size: 39vw;
     text-align: left;
   }
 
