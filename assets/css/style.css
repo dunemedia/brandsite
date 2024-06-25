@@ -204,7 +204,7 @@ header {
   text-align: right;
 }
 .dune-media-title {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -240,6 +240,10 @@ header {
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
+  .text-box p {
+    text-align: left;
+    color: #d6ad60;
+  }
   .header {
     height: 95vh;
   }
@@ -248,9 +252,6 @@ header {
     display: block;
   }
   .dune-media-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     text-align: center;
   }
   .dune-media-title h1 {
