@@ -270,9 +270,9 @@ header {
   margin: auto;
   color: var(--accent-color);
   font-size: 15vw;
+  padding-bottom: 10px;
 }
 .cta-button {
-  margin: 10px;
   padding: 6px 24px;
   font-size: 2.5rem;
   text-decoration: none;
@@ -382,7 +382,7 @@ header {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   .service-group {
     width: 100% !important;
   }
@@ -390,8 +390,21 @@ header {
 
 /* Portfolio Section*/
 .projects-section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   overflow: hidden;
+}
+.case-study {
+  padding: 20px;
+  text-align: left;
+}
+.case-study blockquote {
+  font-size: x-large;
+}
+.case-study h4 {
+  font-size: x-large;
+}
+.case-study li {
+  font-size: x-large;
 }
 
 * {
