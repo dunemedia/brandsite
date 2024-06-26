@@ -1,4 +1,3 @@
-// import velocity from 'velocity-animate';
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -67,40 +66,35 @@ $(document).ready(function () {
   });
 
   // height
-
   var h = $(".expert").height();
   $(".expert .col-sm-6 div").height(function (index, height) {
     return h;
   });
 
-  // Menu bar
-  $(".menu").click(function () {
-    $(this).toggleClass("m c");
-    $(".menu span").toggleClass("ion-navicon ion-android-close");
-    $("#menu-item").toggleClass("show-menu hide-menu");
+  // Define openNav function globally
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  $("#myNav").addClass("open");
+  $(".McButton").hide();
+}
+
+// Define closeNav function globally
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  $("#myNav").removeClass("open");
+  $(".McButton").show();
+}
+
+$(document).ready(function() {
+  $(".McButton").click(function() {
+    openNav();
+    console.log("McButton clicked!");
   });
 
-  $("#menu-item a").click(function () {
-    $(".menu").toggleClass("c m");
-    $(".menu span").toggleClass("ion-navicon ion-android-close");
-    $("#menu-item").toggleClass("show-menu hide-menu");
-  });
+  $("#closeBtn").click(function() {
+    closeNav();
+});
+});
 
-  // Case Study Button
-  $(document).ready(function () {
-    $(".case-study-button").click(function () {
-      // Remove 'active' class from all buttons
-      $(".case-study-button").removeClass("active");
-      // Add 'active' class to the clicked button
-      $(this).addClass("active");
-
-      // Get the 'data-target' attribute of the clicked button
-      var target = $(this).attr("data-target");
-      // Hide all case study content
-      $(".case-study-text").removeClass("active");
-      // Show the targeted case study content
-      $("#" + target).addClass("active");
-    });
-  });
 
 });
