@@ -388,24 +388,55 @@ header {
   }
 }
 
-/* Portfolio Section*/
+/* Project Section */
 .projects-section {
-  padding: 80px 20px;
+  padding: 80px 35px;
   overflow: hidden;
 }
+
 .case-study {
   padding: 20px;
   text-align: left;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
 .case-study blockquote {
-  font-size: x-large;
+  margin: 20px 0;
+  font-size: large;
 }
+
+.case-study h3 {
+  margin-bottom: 10px;
+}
+
 .case-study h4 {
+  margin-top: 20px;
   font-size: x-large;
 }
+
+.case-study ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
 .case-study li {
-  font-size: x-large;
+  margin-bottom: 10px;
+  font-size: large;
 }
+
+.case-study p {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .case-study {
+    padding: 15px;
+  }
+}
+
 
 * {
   box-sizing: border-box;
