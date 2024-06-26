@@ -393,6 +393,11 @@ header {
   padding: 80px 35px;
   overflow: hidden;
 }
+.slideshow-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 .case-study {
   padding: 20px;
@@ -434,6 +439,9 @@ header {
 @media (max-width: 768px) {
   .case-study {
     padding: 15px;
+  }
+  .slideshow-container {
+    grid-template-columns: 1fr;
   }
 }
 
