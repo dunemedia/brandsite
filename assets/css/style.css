@@ -45,7 +45,7 @@
 /*Global Settings*/
 body {
   font-family: "Montserrat-Light", sans-serif;
-  background-color: #0e1111;
+  background-color: #060808;
   color: var(--white-color);
   line-height: 1.6;
   margin: 0;
@@ -385,67 +385,6 @@ header {
 @media only screen and (max-width: 700px) {
   .service-group {
     width: 100% !important;
-  }
-}
-
-
-/* Case Studies Section */
-.case-studies {
-  text-align: center;
-  padding: 100px 20px;
-  display: flex;
-}
-.case-studies h2 {
-  text-align: left;
-}
-
-/* Case Study Buttons Wrapper */
-.case-study-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 5%;
-}
-.case-study-buttons {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
-}
-.case-study-button {
-  font-size: large;
-  color: var(--black-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.case-study-button.active {
-  background-color: var(--accent-color);
-}
-
-/* Case Study Content */
-.case-study-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.case-study-text {
-  display: none;
-}
-.case-study-text.active {
-  display: inline-grid;
-}
-@media (max-width: 768px) {
-  .case-study-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .case-study-buttons {
-    gap: 20px;
   }
 }
 
