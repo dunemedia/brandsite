@@ -93,7 +93,12 @@ $(document).ready(function() {
 
   $("#closeBtn").click(function() {
     closeNav();
-});
+  });
+
+  // Click event for closing the overlay when clicking on links inside overlay-content
+  $("#myNav .overlay-content a").click(function() {
+    closeNav();
+  });
 });
 
 

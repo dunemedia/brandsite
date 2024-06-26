@@ -148,7 +148,19 @@ nav ul li a:hover {
 .McButton {
   display: none;
 }
+.overlay {
+  display: none;
+}
+.overlay-content {
+  display: none;
+}
 @media (max-width: 768px) {
+  .overlay {
+    display: block;
+  }
+  .overlay-content {
+    display: block;
+  }
   button {
     background: none;
     border: none;
